@@ -1,0 +1,102 @@
+{% extends 'all-photos/base.html'%}
+
+{% block content %}
+{{ block.super}}
+
+<div class="container">
+
+    <!-- Looping through images   -->
+    {% for pic in pics %}
+  
+    <div class="row">
+      <!-- displaying Images name-->
+      <div class="col-md-12">
+        <h2 class="text-center"> {{ pic.image_name }} </h2>
+        <img id="myImg-{{pic.id}}" src="{{pic.post_image.url}}" onclick="displayModal(this)" class="img-responsive" alt= "image">
+        <p class="text-center">Posted on: {{ pic.pub_date}}</p>
+        <button id="{{pic.id}}" class="btn btn-primary" onclick="copyUrl(this)">Copy Image Link</button>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal-{{pic.id}}" class="modal">
+        <span class="close" id="close-{{pic.id}}">&times;</span>
+        <img class="modal-content" id="img-{{pic.id}}">
+        <div id="caption-{{pic.image_description}}">
+            <p class="text-center" style="color: rgb(3, 221, 250)">{{pic.image_description}}</p>
+            <p class="text-center" style="color: rgb(3, 221, 250)">Location: {{pic.image_location}}</p>
+            <p class="text-center" style="color: rgb(6, 224, 253)">Posted on: {{ pic.pub_date}}</p>
+        </div>
+      </div>
+  
+    {% empty %}
+    <div class="row">
+      <h2 class="text-center">There No Pictures Posted Yet!!</h2>
+    </div>
+    {% endfor %}
+  
+  </div>
+  
+  {% endblock %}
+
+  {% block scripts %}
+  {{ block.super }}
+  <script>
+
+        function displayModal(el) {
+        var id = el.id.split("-")[1];
+          
+        // Get the modal
+        var modal = document.getElementById('myModal-' + id );
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('myImg-' + id);
+        var modalImg = document.getElementById("img-" + id);
+        var captionText = document.getElementById("caption-" + id);
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+          
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close-" + id);
+          
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+      }
+  </script>
+  <script>
+    function copyUrl(el) {
+        // Get the id attribute for the button that was clicked
+        var imgId = el.id;
+
+        // using the id, we find the image which we want to copy the url for
+        var img = document.getElementById("myImg-" + imgId);
+
+        // construct the full url for the image
+        var url = location.host + img.getAttribute("src");
+
+        // create a dummy input element to put the url inside. We can only do this using an input field
+        var dummy = document.createElement("input");
+
+        // append the input field to the document
+        document.body.appendChild(dummy);
+
+        // put the url as the value of the input field
+        dummy.setAttribute("value", url);
+
+        // select the value inside the input field
+        dummy.select();
+
+        // document object exposes an execCommand method to run commands that manipulate the current editable region, such as form inputs 
+        // we copy the value to the clipboard
+        document.execCommand("copy");
+
+        // remove the dummy input field from the document
+        document.body.removeChild(dummy);
+        alert("copied to clipboard");
+    }
+  </script>
+  {% endblock %}
