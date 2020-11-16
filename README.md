@@ -96,7 +96,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## TEAM
 
-1. [Hassan Juma ](https://github.com/HASSAN1A)
+[Hassan Juma ](https://github.com/HASSAN1A)
 
 ## [License](https://github.com/HASSAN1A/Rental-Hub/blob/master/LICENSE.md)
 
