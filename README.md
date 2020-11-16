@@ -1,24 +1,19 @@
-Gallary
+#### Gallary
 
-[Hassan Juma](https://github.com/HASSAN1A)
+![alt text](app.png)
 
+#### Description
+Django Web application allows users to view different kinds of photos based on different categories and locations that interest them. A user can click on a photo to enlarge it and will also be able to see the details of the photo. A search bar also enables a user to search categories available for viewing based on the location 
 
+#### #### Get Live link here : [USAGE](https://jushgallary.herokuapp.com/)
 
-## Liv
+#### User Story
 
-
-
-## User Story
-
-* A user can view photos that interest me.
-* Click on a single photo to expand it and also view the details of the photo.
-* Search for different categories of photos. (ie. Nature, Food).
-* Copy a link to the photo to share with my friends.
-* View photos based on the location they were taken.
-
-
-
-
+1. A user can view photos that interest them.
+2. Click on a single photo to expand it and also view the details of the photo.
+3. Search for different categories of photos. (ie. Nature, Food).
+4. Copy a link to the photo to share with my friends.
+5. View photos based on the location they were taken.
 
 ## Development Installation
 To get the code..
@@ -53,29 +48,6 @@ Open the application on your browser `127.0.0.1:8000`.
 * [Django](https://www.djangoproject.com/)
 * [Heroku](https://heroku.com)
 
-
-## Known Bugs
-* There are no known bugs currently but pull requests are allowed incase you spot a bug
-
-## Contact Information 
-
-#  Rental-Hub
-### 
-####  A Python Flask CRUD web application where users can look for house for rent or buy .
-
-![alt text](app.png)
-
-## Description
-This is a flask multi-user Rental Hub web application where a user can sign up,log in post  houses for rent and sell,comment on the houses and also get inspired by random business quotes.
-
-
-#### Get Live link here : [USAGE](https://rentalhub.herokuapp.com/)
-
-
-
-
-
-
 ## User Stories
 
 - A user I can view various houses on the homepage of the application.
@@ -94,8 +66,8 @@ This is a flask multi-user Rental Hub web application where a user can sign up,l
 
 Here are the summary:
 
-- A landing page showing house categories.
-- Clickable houses which direct the user to a page with article highlights from the particular house.
+- A landing page showing homepage.
+- Clickable pictures which direct the user to an expanded highlights highlights the image category and location.
 
 
 ## Requirements
@@ -121,8 +93,8 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Built with
 
-1. [Python 3.8.2](https://www.python.org/doc/) : Programming language.
-2. [Flask; Python framework used.](https://flask.palletsprojects.com/en/1.1.x/):Framework used.
+1. [Python 3.8.5](https://www.python.org/doc/) : Programming language.
+2. [Django; Python framework used.](https://www.djangoproject.com/):Framework used.
 3. [HTML](https://www.w3schools.com/html/) : Layout.
 4. [CSS](https://www.w3schools.com/css/) : Styling.
 5. [Bootstrap](https://mdbootstrap.com/) : For responsive websites.
@@ -138,11 +110,6 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ## TEAM
 
 1. [Hassan Juma ](https://github.com/HASSAN1A)
-2. [Lekam Charity ](https://github.com/LekamCharity)
-3. [Kennedy Kiptoo ](https://github.com/kiptoo-097)
-4. [Collins Kipkoech ](https://github.com/kipkoech-msojo)
-5. [Dorcas Wanjiku ](https://github.com/DorcasWanjiku)
-
 
 ## [License](https://github.com/HASSAN1A/Rental-Hub/blob/master/LICENSE.md)
 
