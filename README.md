@@ -3,9 +3,9 @@
 ![alt text](app.png)
 
 #### Description
-Django Web application allows users to view different kinds of photos based on different categories and locations that interest them. A user can click on a photo to enlarge it and will also be able to see the details of the photo. A search bar also enables a user to search categories available for viewing based on the location 
+Django Web application that allows users to view different kinds of photos based on different categories and locations that interest them. A user can click on a photo to enlarge it and will also be able to see the details of the photo. A search bar also enables a user to search categories available for viewing based on the location 
 
-#### #### Get Live link here : [USAGE](https://jushgallary.herokuapp.com/)
+#### Get Live link here : [USAGE](https://jushgallary.herokuapp.com/)
 
 #### User Story
 
