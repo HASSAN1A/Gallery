@@ -39,14 +39,7 @@ To get the code..
   ```bash
   python manage.py test pics
   ```
-Open the application on your browser `127.0.0.1:8000`.
-
-
-## Technology used
-
-* [Python3.8](https://www.python.org/)
-* [Django](https://www.djangoproject.com/)
-* [Heroku](https://heroku.com)
+Open the application on your browser `127.0.0.1:8000`
 
 ## User Stories
 
@@ -54,13 +47,7 @@ Open the application on your browser `127.0.0.1:8000`.
 - A user can select a house and see house details from the selected house in the application.
 - A user can search for a house on the homepage.
 - A user can see the image, description,user and the time a house was created.
-- A user can click on an house and read the full house on the source website.
-
-## Behaviour Driven Development (BDD)
-
-| Behaviour                                                                                        |                                                                      Input                                                                       |                                                                                                 Output |
-| ------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------: | -----------------------------------------------------------------------------------------------------: |
-| Page loads, user arrives in the landing page, a list of all available house category is displayed. | The user can click on any particular list group item to be directed to a separate page containing house highlights houses by the same user. | On clicking the "post a house" button, the user is redirected to the main login and signup to allow you create an house for sale. |  |
+- A user can click on an house and read the full house on the source website
 
 ## Features
 
@@ -105,7 +92,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 10. [Quotes Api](http://quotes.stormconsultancy.co.uk/random.json) : For requesting
 11. [Font Awesome](fontawesome.com) : The world's most popular and easiest to use icon set just got an upgrade. More icons. More styles.
 12. [jQuery 3](https://jquery.com/) : For special effects.
-13. [Figma](https://www.figma.com/file/iTndFXbWHuGkZak60bXr2h/Rental-Hub?node-id=0%3A1) - Blueprint for designing the web app.
+13. [Figma](https://www.figma.com/file/iTndFXbWHuGkZak60bXr2h/Rental-Hub?node-i=0%3A1) - Blueprint for designing the web app.
 
 ## TEAM
 
