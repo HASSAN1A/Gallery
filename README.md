@@ -75,8 +75,8 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ### Bug / Feature Request
 
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/HASSAN1A/Rental-Hub/issues/new) by including your search query and the expected result.
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/HASSAN1A/Rental-Hub). Please include sample queries and their corresponding results.
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/HASSAN1A/Gallery/issues/new) by including your search query and the expected result.
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/HASSAN1A/Gallery). Please include sample queries and their corresponding results.
 
 ## Built with
 
@@ -92,12 +92,12 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 10. [Quotes Api](http://quotes.stormconsultancy.co.uk/random.json) : For requesting
 11. [Font Awesome](fontawesome.com) : The world's most popular and easiest to use icon set just got an upgrade. More icons. More styles.
 12. [jQuery 3](https://jquery.com/) : For special effects.
-13. [Figma](https://www.figma.com/file/iTndFXbWHuGkZak60bXr2h/Rental-Hub?node-i=0%3A1) - Blueprint for designing the web app.
+13. [Figma](https://www.figma.com/file/iTndFXbWHuGkZak60bXr2h/Gallery?node-i=0%3A1) - Blueprint for designing the web app.
 
 ## TEAM
 
 [Hassan Juma ](https://github.com/HASSAN1A)
 
-## [License](https://github.com/HASSAN1A/Rental-Hub/blob/master/LICENSE.md)
+## [License](https://github.com/HASSAN1A/Gallery/blob/master/LICENSE.md)
 
-[MIT](https://github.com/HASSAN1A/Rental-Hub/blob/master/LICENSE.md) © [Hassan Juma](https://github.com/HASSAN1A)
+[MIT](https://github.com/HASSAN1A/Gallery/blob/master/LICENSE.md) © [Hassan Juma](https://github.com/HASSAN1A)
