@@ -2,8 +2,7 @@ Gallary
 
 [Hassan Juma](https://github.com/HASSAN1A)
 
-# Description
-This  is a django application that allows Users to view different kinds of photos that interests me. A user is able to click on a photo to expand it and will able to see the details of the photo. A search ber also enables a user to search categories avalable for viewing based on the location taken.
+
 
 ## Liv
 
