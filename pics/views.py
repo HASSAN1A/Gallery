@@ -13,6 +13,7 @@ def welcome (request):
 
 #Function to display photos that have been posted today.
 def todays_pics(request):
+    images = Image.objects.all()
     date = dt.date.today()
     pics = Image.todays_pics()
 
@@ -21,7 +22,7 @@ def todays_pics(request):
 #Function to redirect to photos posted in the past
 def past_pics (request, past_date):
     #Convert date from the url string
-
+    
     try:
         date = dt.datetime.strptime(past_date, '%Y-%m-%d').date()
     except ValueError:
@@ -49,7 +50,7 @@ def search_results(request):
         return render(request, 'all-photos/search.html',{"message":message})
 
 def image(request,category_id):
-    images = Image.objects.all()
+    
     try:
         image = Image.objects.get(id = category_id)
     except DoesNotExist:
