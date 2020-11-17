@@ -1,7 +1,11 @@
 from django.db import models
 import datetime as dt
-
+from cloudinary.models import CloudinaryField
 # Create your models here.
+
+
+
+
 
 
 class Category(models.Model):
@@ -26,6 +30,7 @@ class Areas (models.Model):
 
 
 class Image (models.Model):
+    image = CloudinaryField('image')
     image_name = models.CharField(max_length =30)
     image_description = models.CharField(max_length =200)
     image_location = models.ForeignKey(Areas, on_delete=models.DO_NOTHING)
