@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404
 import datetime as dt
 from .models import Image
+from  cloudinary.forms import cl_init_js_callbacks
 
 # Create your views here.
 
@@ -11,17 +12,16 @@ def welcome (request):
 
 
 #Function to display photos that have been posted today.
-def todays_pics(request): 
+def todays_pics(request):
     date = dt.date.today()
     pics = Image.todays_pics()
 
-    return render (request, 'all-photos/recent_pics.html',{"date":date, "pics":pics})  
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    return render (request, 'all-photos/recent_pics.html',{"date":date, "pics":pics})                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
 #Function to redirect to photos posted in the past
 def past_pics (request, past_date):
     #Convert date from the url string
-    
+
     try:
         date = dt.datetime.strptime(past_date, '%Y-%m-%d').date()
     except ValueError:
@@ -47,14 +47,14 @@ def search_results(request):
     else:
         message = "You haven't searched for any term"
         return render(request, 'all-photos/search.html',{"message":message})
-    
+
 def image(request,category_id):
+    images = Image.objects.all()
     try:
         image = Image.objects.get(id = category_id)
     except DoesNotExist:
         raise Http404()
     return render(request,"all-photos/images.html", {"image":image})
-
 
 
 
