@@ -1,4 +1,6 @@
 myvirtual/
+myvirtual
+
 *.pyc
 .env
 .vscode
