@@ -16,6 +16,9 @@ from pathlib import Path
 import django_heroku
 import dj_database_url
 from decouple import config,Csv
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 # from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -47,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -160,4 +164,10 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Configure Django App for Heroku.
-django_heroku.settings(locals()) 
+django_heroku.settings(locals())
+
+cloudinary.config(
+  cloud_name = "dy8uvacco",
+  api_key = "559452647943885",
+  api_secret = "WugdaysfbdNZ0AxMtCw2verMyTQ"
+)
