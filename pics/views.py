@@ -13,7 +13,7 @@ def welcome (request):
 
 #Function to display photos that have been posted today.
 def todays_pics(request):
-    images = Image.objects.all()
+
     date = dt.date.today()
     pics = Image.todays_pics()
 

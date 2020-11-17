@@ -4,22 +4,22 @@
 
  <div class="container">
    <div>
-      {% for pics_col in pics %}
+      {% for pics_col in images %}
 
       <div class="row">
-            <img src="{{pics_col.post_image.url}}" class="img-responsive" alt="Image" style="width: 400px; height: 250px;">
+            <img src="{{pics_col.image.url}}" class="img-responsive" alt="Image" style="width: 400px; height: 250px;">
       </div>
 
       <div class="row">
-        <h1 class="">{{image.image_name}}</h1>
+        <h1 class="">{{pics_col.image_name}}</h1>
       </div>
 
       <div class="row">
-        <p>{{image.post_image}}</p>
+        <p>{{pics_col.image}}</p>
       </div>
 
       <div class="row">
-        <p>Posted {{image.pub_date|timesince}}</p>
+        <p>Posted {{pics_col.pub_date|timesince}}</p>
       </div>
    </div>
 

@@ -30,13 +30,13 @@ class Areas (models.Model):
 
 
 class Image (models.Model):
-    image = CloudinaryField('image')
+    image = CloudinaryField('image', null=True)
     image_name = models.CharField(max_length =30)
     image_description = models.CharField(max_length =200)
     image_location = models.ForeignKey(Areas, on_delete=models.DO_NOTHING)
     image_category = models.ForeignKey(Category, on_delete=models.DO_NOTHING)
     pub_date = models.DateTimeField(auto_now_add=True)
-    post_image = models.ImageField(upload_to = 'my-photos/', null=True)
+    # post_image = models.ImageField(upload_to = 'my-photos/', null=True)
 
     #returns a string representation of the model, useful for when we view return queries.
 

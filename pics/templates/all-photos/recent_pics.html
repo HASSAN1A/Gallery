@@ -12,7 +12,7 @@
       <!-- displaying Images name-->
       <div class="col-md-12">
         <h2 class="text-center"> {{ pic.image_name }} </h2>
-        <img id="myImg-{{pic.id}}" src="{{pic.post_image.url}}" onclick="displayModal(this)" class="img-responsive" alt= "image">
+        <img id="myImg-{{pic.id}}" src="{{pic.image.url}}" onclick="displayModal(this)" class="img-responsive" alt= "image">
         <p class="text-center">Posted on: {{ pic.pub_date}}</p>
         <button id="{{pic.id}}" class="btn btn-primary" onclick="copyUrl(this)">Copy Image Link</button>
       </div>
@@ -30,7 +30,7 @@
   
     {% empty %}
     <div class="row">
-      <h2 class="text-center">There No Pictures Posted Yet!!</h2>
+      <h2 class="text-center">There are No Pictures Posted Yet!!</h2>
     </div>
     {% endfor %}
   
