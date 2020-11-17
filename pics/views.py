@@ -13,7 +13,7 @@ def welcome (request):
 
 #Function to display photos that have been posted today.
 def todays_pics(request):
-    
+    images = Image.objects.all()
     date = dt.date.today()
     pics = Image.todays_pics()
 
@@ -49,13 +49,13 @@ def search_results(request):
         message = "You haven't searched for any term"
         return render(request, 'all-photos/search.html',{"message":message})
 
-def image(request,category_id):
-    
-    try:
-        image = Image.objects.get(id = category_id)
-    except DoesNotExist:
-        raise Http404()
-    return render(request,"all-photos/images.html", {"image":image})
+def image(request):
+    images = Image.objects.all()
+    # try:
+    #     image = Image.objects.get(id = category_id)
+    # except DoesNotExist:
+    #     raise Http404()
+    return render(request,"all-photos/images.html", {"images":images})
 
 
 
