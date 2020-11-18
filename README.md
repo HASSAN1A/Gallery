@@ -1,13 +1,12 @@
-Gallery
+#### Gallery
+
+![alt text](app.png)
+
+#### Get Live link here : [USAGE](jushgallary.herokuapp.com/)
 
 
 # Description
 This  is a Django Web application that allows Users to view different kinds of photos that interests me. A user is able to click on a photo to expand it and will able to see the details of the photo. A search bar also enables a user to search categories avalable for viewing based on the location taken.
-
-## Liv
-
-
-
 ## User Story
 
 * A user can view photos that interest me.
@@ -15,10 +14,6 @@ This  is a Django Web application that allows Users to view different kinds of p
 * Search for different categories of photos. (ie. Nature, Food).
 * Copy a link to the photo to share with my friends.
 * View photos based on the location they were taken.
-
-
-
-
 
 ## Development Installation
 To get the code..
@@ -46,43 +41,6 @@ To get the code..
   ```
 Open the application on your browser `127.0.0.1:8000`.
 
-
-## Technology used
-
-* [Python3.8](https://www.python.org/)
-* [Django](https://www.djangoproject.com/)
-* [Heroku](https://heroku.com)
-
-
-## Known Bugs
-* There are no known bugs currently but pull requests are allowed incase you spot a bug
-
-## Contact Information 
-
-#  Rental-Hub
-### 
-####  A Python Flask CRUD web application where users can look for house for rent or buy .
-
-![alt text](app.png)
-
-## Description
-This is a flask multi-user Rental Hub web application where a user can sign up,log in post  houses for rent and sell,comment on the houses and also get inspired by random business quotes.
-
-
-#### Get Live link here : [USAGE](https://rentalhub.herokuapp.com/)
-
-
-
-
-
-
-## User Stories
-
-- A user I can view various houses on the homepage of the application.
-- A user can select a house and see house details from the selected house in the application.
-- A user can search for a house on the homepage.
-- A user can see the image, description,user and the time a house was created.
-- A user can click on an house and read the full house on the source website.
 
 ## Behaviour Driven Development (BDD)
 
@@ -122,7 +80,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ## Built with
 
 1. [Python 3.8.2](https://www.python.org/doc/) : Programming language.
-2. [Flask; Python framework used.](https://flask.palletsprojects.com/en/1.1.x/):Framework used.
+2. [Django; Python framework used.](https://flask.palletsprojects.com/en/1.1.x/):Framework used.
 3. [HTML](https://www.w3schools.com/html/) : Layout.
 4. [CSS](https://www.w3schools.com/css/) : Styling.
 5. [Bootstrap](https://mdbootstrap.com/) : For responsive websites.
@@ -137,7 +95,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## TEAM
 
-1. [Hassan Juma ](https://github.com/HASSAN1A)
+[Hassan Juma ](https://github.com/HASSAN1A)
 
 
 
