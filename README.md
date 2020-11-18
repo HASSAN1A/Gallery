@@ -2,7 +2,7 @@
 
 ![alt text](app.png)
 
-#### Get Live link here : [USAGE](jushgallary.herokuapp.com/)
+#### Get Live link here : [USAGE](https://jushgallary.herokuapp.com/)
 
 
 # Description
